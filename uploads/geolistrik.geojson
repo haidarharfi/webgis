@@ -1,0 +1,1630 @@
+{
+  "type": "FeatureCollection",
+  "name": "GEOLISTRIK",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-39",
+        "X": 111.41994444,
+        "Y": -6.73030556,
+        "Elevasi (m)": "22",
+        "Formasi": "Mundu Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.41994444, -6.73030556]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-40",
+        "X": 111.50827778,
+        "Y": -6.64625,
+        "Elevasi (m)": "115",
+        "Formasi": "Lasem Volcanic Rock"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.50827778, -6.64625]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-41",
+        "X": 111.58030556,
+        "Y": -6.67583333,
+        "Elevasi (m)": "5",
+        "Formasi": "Alluvium"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.58030556, -6.67583333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-42",
+        "X": 111.51194,
+        "Y": -6.72806,
+        "Elevasi (m)": "109",
+        "Formasi": "Wonocolo Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.51194, -6.72806]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-43",
+        "X": 111.55256,
+        "Y": -6.82378,
+        "Elevasi (m)": "188",
+        "Formasi": "Bulu Formation (Batu Gamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.55256, -6.82378]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-44",
+        "X": 111.479970,
+        "Y": -6.818746,
+        "Elevasi (m)": "111",
+        "Formasi": "Mundu Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.479970, -6.818746]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-45",
+        "X": 111.56741667,
+        "Y": -6.77383333,
+        "Elevasi (m)": "36",
+        "Formasi": "Wonocolo Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.56741667, -6.77383333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-46",
+        "X": 111.34569,
+        "Y": -6.83814,
+        "Elevasi (m)": "66",
+        "Formasi": "Mundu Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.34569, -6.83814]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-47",
+        "X": 111.24611,
+        "Y": -6.80858,
+        "Elevasi (m)": "37",
+        "Formasi": "Mundu Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.24611, -6.80858]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-48",
+        "X": 111.22836,
+        "Y": -6.74308,
+        "Elevasi (m)": "14",
+        "Formasi": "Lidah Formation (Batulempung)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.22836, -6.74308]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-49",
+        "X": 111.31356,
+        "Y": -6.74258,
+        "Elevasi (m)": "23",
+        "Formasi": "Mundu Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.31356, -6.74258]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-50",
+        "X": 111.40769444,
+        "Y": -7.01013889,
+        "Elevasi (m)": "91",
+        "Formasi": "Tambakromo Formation (Batulempung, Napal, Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.40769444, -7.01013889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-51",
+        "X": 111.2561111,
+        "Y": -6.93111111,
+        "Elevasi (m)": "100",
+        "Formasi": "Mundu Formation (Napal)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.2561111, -6.93111111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-52",
+        "X": 111.41225,
+        "Y": -6.92252778,
+        "Elevasi (m)": "117",
+        "Formasi": "Mundu Formation (Napal)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.41225, -6.92252778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-53",
+        "X": 111.40141667,
+        "Y": -6.84725,
+        "Elevasi (m)": "72",
+        "Formasi": "Mundu Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.40141667, -6.84725]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-54",
+        "X": 111.60163889,
+        "Y": -7.00888889,
+        "Elevasi (m)": "123",
+        "Formasi": "Mundu Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.60163889, -7.00888889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-55",
+        "X": 111.56636111,
+        "Y": -6.92738889,
+        "Elevasi (m)": "155",
+        "Formasi": "Mundu Formation (Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.56636111, -6.92738889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-56",
+        "X": 111.49863889,
+        "Y": -6.92375,
+        "Elevasi (m)": "134",
+        "Formasi": "Mundu Formation (Napal)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.49863889, -6.92375]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-57",
+        "X": 111.49225,
+        "Y": -7.0775,
+        "Elevasi (m)": "129",
+        "Formasi": "Tambakromo Formation (Batulempung, Napal, Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.49225, -7.0775]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-58",
+        "X": 111.55752778,
+        "Y": -7.03433333,
+        "Elevasi (m)": "117",
+        "Formasi": "Tambakromo Formation (Batulempung, Napal, Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.55752778, -7.03433333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-59",
+        "X": 111.49361111,
+        "Y": -6.99486111,
+        "Elevasi (m)": "110",
+        "Formasi": "Tambakromo Formation (Batulempung, Napal, Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.49361111, -6.99486111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-60",
+        "X": 111.42230556,
+        "Y": -7.12783333,
+        "Elevasi (m)": "105",
+        "Formasi": "Tambakromo Formation (Batulempung, Napal, Batugamping)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.42230556, -7.12783333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-61",
+        "X": 111.34461111,
+        "Y": -7.17636111,
+        "Elevasi (m)": "66",
+        "Formasi": "Tambakromo Formation (Alluvium)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.34461111, -7.17636111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-62",
+        "X": 111.29177778,
+        "Y": -7.22058333,
+        "Elevasi (m)": "116",
+        "Formasi": "Kalibeng Formation (Napal, Batupasir, gampingan)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.29177778, -7.22058333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-63",
+        "X": 111.11330556,
+        "Y": -7.18227778,
+        "Elevasi (m)": "80",
+        "Formasi": "Alluvial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.11330556, -7.18227778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-64",
+        "X": 110.93825,
+        "Y": -7.214,
+        "Elevasi (m)": "79",
+        "Formasi": "Kalibeng Formation (Napal, Batupasir, gampingan)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.93825, -7.214]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-65",
+        "X": 110.861625,
+        "Y": -7.270889,
+        "Elevasi (m)": "132",
+        "Formasi": "Kerek Formation (Napal, batulempung, batugamping, batupasir)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.861625, -7.270889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-66",
+        "X": 111.05135,
+        "Y": -6.64861667,
+        "Elevasi (m)": "42",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.05135, -6.64861667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-67",
+        "X": 111.10891667,
+        "Y": -6.66478333,
+        "Elevasi (m)": "4",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.10891667, -6.66478333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-68",
+        "X": 111.13776667,
+        "Y": -6.73796667,
+        "Elevasi (m)": "6",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.13776667, -6.73796667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-69",
+        "X": 111.07088333,
+        "Y": -6.74428333,
+        "Elevasi (m)": "5",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.07088333, -6.74428333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-70",
+        "X": 111.0575,
+        "Y": -6.56166667,
+        "Elevasi (m)": "7",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.0575, -6.56166667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-71",
+        "X": 111.03436667,
+        "Y": -6.46843333,
+        "Elevasi (m)": "4",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.03436667, -6.46843333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-72",
+        "X": 110.98121667,
+        "Y": -6.46735,
+        "Elevasi (m)": "49",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.98121667, -6.46735]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-73",
+        "X": 110.87363333,
+        "Y": -6.48715,
+        "Elevasi (m)": "127",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.87363333, -6.48715]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-74",
+        "X": 110.96335,
+        "Y": -6.54406667,
+        "Elevasi (m)": "172",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.96335, -6.54406667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-75",
+        "X": 110.96121667,
+        "Y": -6.65745,
+        "Elevasi (m)": "356",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.96121667, -6.65745]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-76",
+        "X": 110.95281667,
+        "Y": -6.71316667,
+        "Elevasi (m)": "218",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.95281667, -6.71316667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-77",
+        "X": 111.13791667,
+        "Y": -6.8251,
+        "Elevasi (m)": "24",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.13791667, -6.8251]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-78",
+        "X": 111.03551667,
+        "Y": -6.81985,
+        "Elevasi (m)": "10",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.03551667, -6.81985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-79",
+        "X": 111.21878333,
+        "Y": -7.00743333,
+        "Elevasi (m)": "86",
+        "Formasi": "Ledok (Tml)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.21878333, -7.00743333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-80",
+        "X": 111.28183333,
+        "Y": -7.10616667,
+        "Elevasi (m)": "93",
+        "Formasi": "Tambakromo (QTpt)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.28183333, -7.10616667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-81",
+        "X": 111.1533,
+        "Y": -7.01365,
+        "Elevasi (m)": "125",
+        "Formasi": "Formasi Wonocolo (Tmw)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.1533, -7.01365]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-82",
+        "X": 111.02011667,
+        "Y": -6.90288333,
+        "Elevasi (m)": "29",
+        "Formasi": "Lidah (Qtpl)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.02011667, -6.90288333]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-83",
+        "X": 111.1287,
+        "Y": -6.9182,
+        "Elevasi (m)": "250",
+        "Formasi": "Formasi Wonocolo (Tmw)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.1287, -6.9182]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-84",
+        "X": 111.19068333,
+        "Y": -6.92336667,
+        "Elevasi (m)": "236",
+        "Formasi": "Ngrayong (Tmn)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.19068333, -6.92336667]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-85",
+        "X": 110.95325,
+        "Y": -6.8084,
+        "Elevasi (m)": "12",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.95325, -6.8084]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-86",
+        "X": 110.95508333,
+        "Y": -6.92115,
+        "Elevasi (m)": "24",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.95508333, -6.92115]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-01",
+        "X": 110.434167,
+        "Y": -7.049583,
+        "Elevasi (m)": "216",
+        "Formasi": "Kaligetas (Qpkg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.434167, -7.049583]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-02",
+        "X": 110.690083,
+        "Y": -6.908167,
+        "Elevasi (m)": "6",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.690083, -6.908167]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-03",
+        "X": 110.605278,
+        "Y": -6.947583,
+        "Elevasi (m)": "4",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.605278, -6.947583]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-05",
+        "X": 110.59519,
+        "Y": -7.07317,
+        "Elevasi (m)": "17",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.59519, -7.07317]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-06",
+        "X": 110.669472,
+        "Y": -7.017588,
+        "Elevasi (m)": "12",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.669472, -7.017588]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-07",
+        "X": 110.682827,
+        "Y": -7.096811,
+        "Elevasi (m)": "17",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.682827, -7.096811]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-08",
+        "X": 110.73327,
+        "Y": -7.026647,
+        "Elevasi (m)": "11",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.73327, -7.026647]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-09",
+        "X": 110.76852,
+        "Y": -7.077676,
+        "Elevasi (m)": "16",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.76852, -7.077676]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-10",
+        "X": 110.865053,
+        "Y": -7.095615,
+        "Elevasi (m)": "27",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.865053, -7.095615]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-11",
+        "X": 110.798694,
+        "Y": -7.136451,
+        "Elevasi (m)": "50",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.798694, -7.136451]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-12",
+        "X": 110.998687,
+        "Y": -7.118006,
+        "Elevasi (m)": "37",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.998687, -7.118006]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-13",
+        "X": 111.132522,
+        "Y": -7.134975,
+        "Elevasi (m)": "55",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.132522, -7.134975]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-14",
+        "X": 111.199297,
+        "Y": -7.182197,
+        "Elevasi (m)": "103",
+        "Formasi": "Kalibeng, Anggota Klitik (Tpkk)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.199297, -7.182197]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-15",
+        "X": 111.061106,
+        "Y": -7.220419,
+        "Elevasi (m)": "104",
+        "Formasi": "Kalibeng (Tmpk)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.061106, -7.220419]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-16",
+        "X": 111.318857,
+        "Y": -7.042635,
+        "Elevasi (m)": "70",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.318857, -7.042635]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-17",
+        "X": 111.237626,
+        "Y": -7.108944,
+        "Elevasi (m)": "63",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.237626, -7.108944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-18",
+        "X": 111.140549,
+        "Y": -7.084171,
+        "Elevasi (m)": "46",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.140549, -7.084171]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-19",
+        "X": 111.061944,
+        "Y": -7.124171,
+        "Elevasi (m)": "42",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.061944, -7.124171]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-20",
+        "X": 110.963356,
+        "Y": -7.15398,
+        "Elevasi (m)": "51",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.963356, -7.15398]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-21",
+        "X": 110.931849,
+        "Y": -7.021128,
+        "Elevasi (m)": "29",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.931849, -7.021128]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-22",
+        "X": 110.917039,
+        "Y": -7.109359,
+        "Elevasi (m)": "32",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.917039, -7.109359]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-23",
+        "X": 110.833603,
+        "Y": -7.169447,
+        "Elevasi (m)": "41",
+        "Formasi": "Kalibeng (Tmpk)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.833603, -7.169447]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-24",
+        "X": 110.73791,
+        "Y": -6.954228,
+        "Elevasi (m)": "8",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.73791, -6.954228]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-25",
+        "X": 110.906664,
+        "Y": -7.001114,
+        "Elevasi (m)": "81",
+        "Formasi": "Tawun (Tmt)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.906664, -7.001114]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-26",
+        "X": 110.659115,
+        "Y": -6.852223,
+        "Elevasi (m)": "3",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.659115, -6.852223]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-27",
+        "X": 110.593329,
+        "Y": -7.005841,
+        "Elevasi (m)": "8",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.593329, -7.005841]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-28",
+        "X": 110.574715,
+        "Y": -6.864729,
+        "Elevasi (m)": "2",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.574715, -6.864729]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-29",
+        "X": 110.534444,
+        "Y": -6.914172,
+        "Elevasi (m)": "3",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.534444, -6.914172]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-30",
+        "X": 110.428331,
+        "Y": -7.128896,
+        "Elevasi (m)": "299",
+        "Formasi": "Kaligetas (Qpkg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.428331, -7.128896]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-31",
+        "X": 110.313609,
+        "Y": -7.05778,
+        "Elevasi (m)": "240",
+        "Formasi": "Kaligetas (Qpkg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.313609, -7.05778]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-32",
+        "X": 110.296994,
+        "Y": -7.028303,
+        "Elevasi (m)": "178",
+        "Formasi": "Kaligetas (Qpkg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.296994, -7.028303]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-33",
+        "X": 110.273013,
+        "Y": -7.009263,
+        "Elevasi (m)": "93",
+        "Formasi": "Damar (QTd)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.273013, -7.009263]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-34",
+        "X": 110.264393,
+        "Y": -6.957601,
+        "Elevasi (m)": "7",
+        "Formasi": "Damar (QTd)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.264393, -6.957601]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-35",
+        "X": 110.310359,
+        "Y": -7.001911,
+        "Elevasi (m)": "155",
+        "Formasi": "Damar (QTd)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.310359, -7.001911]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-36",
+        "X": 110.307996,
+        "Y": -6.947002,
+        "Elevasi (m)": "1",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.307996, -6.947002]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-37",
+        "X": 110.517549,
+        "Y": -7.068763,
+        "Elevasi (m)": "32",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.517549, -7.068763]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-38",
+        "X": 110.509647,
+        "Y": -7.005408,
+        "Elevasi (m)": "11",
+        "Formasi": "Endapan Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.509647, -7.005408]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-87",
+        "X": 110.853666,
+        "Y": -6.834665034,
+        "Elevasi (m)": "15",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.853666, -6.834665034]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-88",
+        "X": 110.7973,
+        "Y": -7.191763027,
+        "Elevasi (m)": "52",
+        "Formasi": "Kerek (Tmk)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.7973, -7.191763027]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-89",
+        "X": 110.50481,
+        "Y": -7.198292026,
+        "Elevasi (m)": "227",
+        "Formasi": "Batruan gunung Api Gajahmakmur (Qhg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.50481, -7.198292026]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-90",
+        "X": 110.415713,
+        "Y": -7.199868998,
+        "Elevasi (m)": "503",
+        "Formasi": "Batuan Gunungapi Merbabu (Qvm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.415713, -7.199868998]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-91",
+        "X": 110.741171,
+        "Y": -7.265784033,
+        "Elevasi (m)": "159",
+        "Formasi": "Kaligetas (Qpkg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.741171, -7.265784033]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-92",
+        "X": 110.690513,
+        "Y": -7.280199984,
+        "Elevasi (m)": "137",
+        "Formasi": "Notopuro (Qpn)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.690513, -7.280199984]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-93",
+        "X": 110.515223,
+        "Y": -7.273748014,
+        "Elevasi (m)": "408",
+        "Formasi": "Batuan Gunungapi Telomoyo (Qte)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.515223, -7.273748014]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-94",
+        "X": 110.399979,
+        "Y": -7.29067401,
+        "Elevasi (m)": "474",
+        "Formasi": "Batuan Gunungapi Gajahmakmur (Qhg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.399979, -7.29067401]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-95",
+        "X": 110.332371,
+        "Y": -7.274920978,
+        "Elevasi (m)": "872",
+        "Formasi": "Batuan Gunungapi Kaligesik (Qpk)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.332371, -7.274920978]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-96",
+        "X": 110.763625,
+        "Y": -7.370322,
+        "Elevasi (m)": "165",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.763625, -7.370322]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-97",
+        "X": 110.68026,
+        "Y": -7.375570033,
+        "Elevasi (m)": "244",
+        "Formasi": "Bulu (Tmb)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.68026, -7.375570033]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-98",
+        "X": 110.575076,
+        "Y": -7.371401964,
+        "Elevasi (m)": "537",
+        "Formasi": "Lava Muria (Qvlm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.575076, -7.371401964]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-99",
+        "X": 110.501453,
+        "Y": -7.380893966,
+        "Elevasi (m)": "760",
+        "Formasi": "Tawun (Tmt)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.501453, -7.380893966]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-100",
+        "X": 110.419936,
+        "Y": -7.366752019,
+        "Elevasi (m)": "1196",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.419936, -7.366752019]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-101",
+        "X": 110.299792,
+        "Y": -7.190234,
+        "Elevasi (m)": "766",
+        "Formasi": "Kerek (Tmk)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.299792, -7.190234]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-102",
+        "X": 110.26506,
+        "Y": -7.086692015,
+        "Elevasi (m)": "288",
+        "Formasi": "Kerek (Tmk)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.26506, -7.086692015]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-103",
+        "X": 110.370064,
+        "Y": -7.096091984,
+        "Elevasi (m)": "261",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.370064, -7.096091984]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-104",
+        "X": 110.770149,
+        "Y": -6.821491029,
+        "Elevasi (m)": "6",
+        "Formasi": "Batuan Gunungapi Merbabu (Qvm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.770149, -6.821491029]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-105",
+        "X": 110.657414,
+        "Y": -6.666669985,
+        "Elevasi (m)": "4",
+        "Formasi": "Batuan Gunungapi Merbabu (Qvm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.657414, -6.666669985]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-106",
+        "X": 110.724912,
+        "Y": -6.672087042,
+        "Elevasi (m)": "48",
+        "Formasi": "Batuan Gunungapi Merbabu (Qvm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.724912, -6.672087042]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-107",
+        "X": 110.766419,
+        "Y": -6.608008984,
+        "Elevasi (m)": "235",
+        "Formasi": "Kaligetas (Qpkg)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.766419, -6.608008984]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-108",
+        "X": 110.806034,
+        "Y": -6.67608303,
+        "Elevasi (m)": "320",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.806034, -6.67608303]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-109",
+        "X": 110.817637,
+        "Y": -6.990797007,
+        "Elevasi (m)": "94",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.817637, -6.990797007]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-110",
+        "X": 110.754022,
+        "Y": -6.91678497,
+        "Elevasi (m)": "6",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.754022, -6.91678497]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-111",
+        "X": 110.870009,
+        "Y": -6.922834022,
+        "Elevasi (m)": "8",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.870009, -6.922834022]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-112",
+        "X": 110.861207,
+        "Y": -6.657304969,
+        "Elevasi (m)": "643",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.861207, -6.657304969]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-113",
+        "X": 110.768038,
+        "Y": -6.73122799,
+        "Elevasi (m)": "32",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.768038, -6.73122799]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-114",
+        "X": 110.853982,
+        "Y": -6.741234977,
+        "Elevasi (m)": "122",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.853982, -6.741234977]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-115",
+        "X": 110.697702,
+        "Y": -6.730265999,
+        "Elevasi (m)": "1",
+        "Formasi": "Tuf Muria (Qvtm)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.697702, -6.730265999]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-116",
+        "X": 110.621587,
+        "Y": -6.770786969,
+        "Elevasi (m)": "2",
+        "Formasi": "Aluvium (Qa)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.621587, -6.770786969]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Kode Titik": "GL-117",
+        "X": 111.034198,
+        "Y": -7.014469011,
+        "Elevasi (m)": "150",
+        "Formasi": "Aluvium Qa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.034198, -7.014469011]
+      }
+    }
+  ]
+}

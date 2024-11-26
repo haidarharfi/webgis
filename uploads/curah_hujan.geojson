@@ -1,0 +1,1722 @@
+{
+  "type": "FeatureCollection",
+  "name": "Curah Hujan",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3563",
+        "location": "WONOSEGORO",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.660136, -7.312011]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3588",
+        "location": "CH CACABAN",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.18626, -7.006452]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3603",
+        "location": "CH JATISARI",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,1000,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.765863, -6.747915]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3604",
+        "location": "CH PRAWOTO",
+        "last_sending": "2024-08-21 12:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.8295, -6.95884]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3605",
+        "location": "CH MOJOAGUNG",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.781208, -7.091161]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3607",
+        "location": "CH TANJUNGMOJO",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.917637, -6.776413]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3608",
+        "location": "CH SIMO",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.072226, -7.183606]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3609",
+        "location": "CH TODANAN",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.177622, -6.938663]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3610",
+        "location": "CH Pemali Juana",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.467584, -7.009773]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3611",
+        "location": "SUSUKAN",
+        "last_sending": "2024-09-03 20:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.562475, -7.406425]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3612",
+        "location": "ARL TUNJUNGAN",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.369883, -6.922966]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3621",
+        "location": "CH KDO",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.839161, -7.257663]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3622",
+        "location": "TEMPURAN",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.464718, -6.90981]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3623",
+        "location": "BOLOAGUNG",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.001935, -6.855865]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3661",
+        "location": "PCH TUNTANG",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.45256, -7.261118]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3680",
+        "location": "CH KOPENG",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.419977, -7.397532]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3681",
+        "location": "BANYUMENENG",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.369397, -6.989691]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3704",
+        "location": "JATIBARANG",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.355766, -7.033906]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3705",
+        "location": "CH UNGARAN",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.404167, -7.144722]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3706",
+        "location": "ARL PLUMBON",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.299879, -6.980276]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3707",
+        "location": "CH TARUKAN",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.360685, -7.229325]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3708",
+        "location": "CH BRINGIN",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.328008, -6.993021]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3752",
+        "location": "CH PUCANGGADING",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.484268, -7.040489]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3753",
+        "location": "CH Silandak",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.336282, -6.998765]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3817",
+        "location": "ARL Pakis",
+        "last_sending": "2024-05-29 01:01:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.03953, -6.95517]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3822",
+        "location": "CH Sayung",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.507187, -6.942314]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3845",
+        "location": "ARL Glapan",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.68952, -7.10918]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3846",
+        "location": "ARL Kuta",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.36446, -7.01928]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3847",
+        "location": "CH Bancak",
+        "last_sending": "2024-09-17 21:30:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.611111, -7.245944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3850",
+        "location": "ARL Bangsri",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.75264, -6.52968]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3851",
+        "location": "ARL Ngawen",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.3319, -7.03247]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3852",
+        "location": "CH Blado",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.833, -7.698]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3858",
+        "location": "CH RAHTAWU",
+        "last_sending": "2024-09-17 21:30:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.863284, -6.655449]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3859",
+        "location": "CH KALIJAJAR",
+        "last_sending": "2024-09-17 21:30:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.648881, -6.905909]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3897",
+        "location": "CH BISMO",
+        "last_sending": "2024-03-21 01:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.837813, -7.107554]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3901",
+        "location": "CH KUNTI",
+        "last_sending": "2024-09-17 05:00:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,100,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.778606, -7.34489]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "3935",
+        "location": "CH BERINGIN 2",
+        "last_sending": "2024-04-19 03:45:00",
+        "sensor": {
+          "Curah Hujan": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,200,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.329519, -6.994897]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "4078",
+        "location": "GUNTUR",
+        "last_sending": "2024-09-17 21:02:00",
+        "sensor": {
+          "Water Level": {
+            "value_actual": 999.8,
+            "value_cumulative": 999.8,
+            "value_minimal": 999.8,
+            "value_maximal": 999.8,
+            "unit": "cm",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Battery": {
+            "value_actual": 13,
+            "value_cumulative": 13.338,
+            "value_minimal": 12.8,
+            "value_maximal": 14.5,
+            "unit": "Volt",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.615528, -6.976359]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "4152",
+        "location": "Embung Poltek PU",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Wind Direction": {
+            "value_actual": 250.36,
+            "value_cumulative": 225.743,
+            "value_minimal": 102.7,
+            "value_maximal": 286.555,
+            "unit": "deg",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Wind Velocity": {
+            "value_actual": 0,
+            "value_cumulative": 0.009,
+            "value_minimal": 0,
+            "value_maximal": 0.169,
+            "unit": "m/s",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Battery": {
+            "value_actual": 12.738,
+            "value_cumulative": 13.128,
+            "value_minimal": 12.589,
+            "value_maximal": 14.176,
+            "unit": "Volt",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Dev. Temp.": {
+            "value_actual": 29.21,
+            "value_cumulative": 32.863,
+            "value_minimal": 24.014,
+            "value_maximal": 43.494,
+            "unit": "°C",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Rainfall": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "mm",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.450733, -6.973107]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "4205",
+        "location": "BUGO",
+        "last_sending": "2024-09-17 22:00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.714103, -6.7757152]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "4245",
+        "location": "BD KENCONOREJO",
+        "last_sending": "2024-03-20 12:30:00",
+        "sensor": {
+          "Water Level": {
+            "value_actual": 10.749,
+            "value_cumulative": 11.219,
+            "value_minimal": 10.65,
+            "value_maximal": 11.546,
+            "unit": "cm",
+            "alarm_level": "0,100,150,200,250",
+            "alarm_stats": "OFF"
+          },
+          "Dev. Temp.": {
+            "value_actual": 36.527,
+            "value_cumulative": 31.62,
+            "value_minimal": 27.012,
+            "value_maximal": 39.748,
+            "unit": "°C",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Battery": {
+            "value_actual": 13.578,
+            "value_cumulative": 13.169,
+            "value_minimal": 12.606,
+            "value_maximal": 14.163,
+            "unit": "Volt",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.834173, -6.92846]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "4274",
+        "location": "GPA Ngaliyan",
+        "last_sending": "2024-04-19 15:30:00",
+        "sensor": {
+          "Water Level": {
+            "value_actual": 60.088,
+            "value_cumulative": 71.061,
+            "value_minimal": 58.119,
+            "value_maximal": 87.875,
+            "unit": "cm",
+            "alarm_level": "1,150,200,250,350",
+            "alarm_stats": "OFF"
+          },
+          "Dev. Temp.": {
+            "value_actual": 39.504,
+            "value_cumulative": 32.398,
+            "value_minimal": 26.757,
+            "value_maximal": 40.835,
+            "unit": "°C",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Battery": {
+            "value_actual": 13.802,
+            "value_cumulative": 13.326,
+            "value_minimal": 12.714,
+            "value_maximal": 14.413,
+            "unit": "Volt",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.306155, -6.974152]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "4275",
+        "location": "GPA BRINGIN 2",
+        "last_sending": "2024-04-19 04:30:00",
+        "sensor": {
+          "Water Level": {
+            "value_actual": 174.144,
+            "value_cumulative": 182.471,
+            "value_minimal": 173.481,
+            "value_maximal": 246.2,
+            "unit": "cm",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Dev. Temp.": {
+            "value_actual": 26.902,
+            "value_cumulative": 27.034,
+            "value_minimal": 26.76,
+            "value_maximal": 27.492,
+            "unit": "°C",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Battery": {
+            "value_actual": 12.608,
+            "value_cumulative": 12.66,
+            "value_minimal": 12.608,
+            "value_maximal": 12.721,
+            "unit": "Volt",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.329155, -6.98843]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "4276",
+        "location": "SUMUR PANTAU POLTEK",
+        "last_sending": "2023-11-30 19:00:00",
+        "sensor": {
+          "Water Level": {
+            "value_actual": 640.24,
+            "value_cumulative": 640.24,
+            "value_minimal": 640.24,
+            "value_maximal": 640.24,
+            "unit": "cm",
+            "alarm_level": "20000,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Dev. Temp.": {
+            "value_actual": 30.783,
+            "value_cumulative": 31.607,
+            "value_minimal": 28.731,
+            "value_maximal": 36.762,
+            "unit": "°C",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          },
+          "Battery": {
+            "value_actual": 11.666,
+            "value_cumulative": 11.763,
+            "value_minimal": 11.666,
+            "value_maximal": 12.006,
+            "unit": "Volt",
+            "alarm_level": "0,0,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.450568, -6.973937]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "6622",
+        "location": "TEMPURAN",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Sensor Suhu": {
+            "value_actual": 29.14,
+            "value_cumulative": 27.361,
+            "value_minimal": 23.09,
+            "value_maximal": 31.5,
+            "unit": "°C",
+            "alarm_level": "50,0,0,0,0",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.464718, -6.90981]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8305",
+        "location": "DA GLAPAN",
+        "last_sending": "2024-09-17 20:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 1510,
+            "value_cumulative": 1510,
+            "value_minimal": 1510,
+            "value_maximal": 1510,
+            "unit": "cm",
+            "alarm_level": "50,200,300,400,500",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.68952, -7.10918]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8307",
+        "location": "DA BANJAREJO",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 346,
+            "value_cumulative": 345.652,
+            "value_minimal": 345,
+            "value_maximal": 346,
+            "unit": "cm",
+            "alarm_level": "300,400,500,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.332063, -7.032275]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8308",
+        "location": "DA PUCANGGADING",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "cm",
+            "alarm_level": "130,150,170,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.484361, -7.040447]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8345",
+        "location": "KLAMBU",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 1620,
+            "value_cumulative": 1636.955,
+            "value_minimal": 1620,
+            "value_maximal": 1651,
+            "unit": "cm",
+            "alarm_level": "600,1680,1700,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.803719, -7.017781]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8372",
+        "location": "SOCO PULOREJO",
+        "last_sending": "2024-06-14 19:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 140,
+            "value_cumulative": 140,
+            "value_minimal": 140,
+            "value_maximal": 140,
+            "unit": "cm",
+            "alarm_level": "200,400,500,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.132635, -7.134599]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8373",
+        "location": "WULAN KARANGANYAR",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "cm",
+            "alarm_level": "650,700,740,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.814488, -6.84351]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8374",
+        "location": "DA MIJEN",
+        "last_sending": "2024-06-11 14:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "cm",
+            "alarm_level": "200,350,500,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.783395, -6.788216]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8375",
+        "location": "BD LOGUNG",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 3,
+            "value_cumulative": 3,
+            "value_minimal": 3,
+            "value_maximal": 3,
+            "unit": "cm",
+            "alarm_level": "0,300,400,500,600",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.916961, -6.782182]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8376",
+        "location": "KEDUNG PETING",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 22,
+            "value_cumulative": 21.5,
+            "value_minimal": 21,
+            "value_maximal": 22,
+            "unit": "cm",
+            "alarm_level": "200,350,500,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.203575, -6.988714]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8379",
+        "location": "Waduk Lodan",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 4540,
+            "value_cumulative": 4539.826,
+            "value_minimal": 4539,
+            "value_maximal": 4540,
+            "unit": "cm",
+            "alarm_level": "4655,4700,4760,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.607696, -6.780959]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8380",
+        "location": "SRATEN",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 27,
+            "value_cumulative": 27,
+            "value_minimal": 27,
+            "value_maximal": 27,
+            "unit": "cm",
+            "alarm_level": "70,150,200,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.465168, -7.326818]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8381",
+        "location": "SEDADI",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 2414,
+            "value_cumulative": 2402.13,
+            "value_minimal": 2400,
+            "value_maximal": 2414,
+            "unit": "cm",
+            "alarm_level": "2580,2640,2693,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.859416, -7.142432]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8382",
+        "location": "Intake KDO",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 7782,
+            "value_cumulative": 7785.217,
+            "value_minimal": 7782,
+            "value_maximal": 7786,
+            "unit": "cm",
+            "alarm_level": "9000,9300,9370,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.835784, -7.256872]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8384",
+        "location": "SIDOREJO",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 3770,
+            "value_cumulative": 3750.478,
+            "value_minimal": 3740,
+            "value_maximal": 3770,
+            "unit": "cm",
+            "alarm_level": "3835,3975,4020,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.851473, -7.240931]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8431",
+        "location": "DOLOG BD.BARANG",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "cm",
+            "alarm_level": "50,100,150,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.50022, -7.090705]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8438",
+        "location": "DA SILANDAK",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "cm",
+            "alarm_level": "60408,10701,15503,62459,56375",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.369397, -6.989691]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8444",
+        "location": "AWLL PLUMBON",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 152,
+            "value_cumulative": 152,
+            "value_minimal": 152,
+            "value_maximal": 152,
+            "unit": "cm",
+            "alarm_level": "350,375,400,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.294369, -6.982222]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8445",
+        "location": "DA BRINGIN",
+        "last_sending": "2024-07-12 20:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 1538,
+            "value_cumulative": 1538,
+            "value_minimal": 1538,
+            "value_maximal": 1538,
+            "unit": "cm",
+            "alarm_level": "1876,18060,39667,10285,22016",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.328008, -6.993021]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8466",
+        "location": "TAWANGHARJO",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 590,
+            "value_cumulative": 590,
+            "value_minimal": 590,
+            "value_maximal": 590,
+            "unit": "cm",
+            "alarm_level": "500,650,800,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [111.001187, -7.100585]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8467",
+        "location": "PARAT",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 12,
+            "value_cumulative": 12,
+            "value_minimal": 12,
+            "value_maximal": 12,
+            "unit": "cm",
+            "alarm_level": "70,150,200,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.447256, -7.329925]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8468",
+        "location": "JENGGLONG",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 11,
+            "value_cumulative": 11,
+            "value_minimal": 11,
+            "value_maximal": 11,
+            "unit": "cm",
+            "alarm_level": "100,250,350,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.859416, -7.142432]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8475",
+        "location": "GEMAH",
+        "last_sending": "2024-09-17 21:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 66,
+            "value_cumulative": 66,
+            "value_minimal": 66,
+            "value_maximal": 66,
+            "unit": "cm",
+            "alarm_level": "150,200,250,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.466808, -7.015632]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8499",
+        "location": "Bd Wilalung",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 213,
+            "value_cumulative": 212.739,
+            "value_minimal": 212,
+            "value_maximal": 213,
+            "unit": "cm",
+            "alarm_level": "610,660,700,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.772999, -6.920795]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8503",
+        "location": "DA GUWO",
+        "last_sending": "2024-09-17 22:00:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 0,
+            "value_cumulative": 0,
+            "value_minimal": 0,
+            "value_maximal": 0,
+            "unit": "cm",
+            "alarm_level": "100,300,500,0,0",
+            "alarm_stats": "ON"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.71076, -7.28765]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "hardware_code": "8537",
+        "location": "Bd. Pesantren Kletak",
+        "last_sending": "2024-09-17 21:30:00",
+        "sensor": {
+          "Tinggi Muka Air": {
+            "value_actual": 6,
+            "value_cumulative": 7.211,
+            "value_minimal": 5,
+            "value_maximal": 9,
+            "unit": "cm",
+            "alarm_level": "5,170,200,250,270",
+            "alarm_stats": "OFF"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [109.648507, -6.979743]
+      }
+    }
+  ]
+}
