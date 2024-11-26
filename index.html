@@ -399,10 +399,14 @@
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="informasi-dasar" role="tabpanel" aria-labelledby="informasi-dasar-tab">
-                                    <strong>Nomor Sumur:</strong> ${feature.properties["Nomor Sumur"]}<br>
-                                    <strong>Latitude:</strong> ${feature.properties.latitude}<br>
-                                    <strong>Longitude:</strong> ${feature.properties.longitude}<br>
-                                    <strong>Kedalaman (m):</strong> ${feature.properties["Ked.Sumur (m)"]} m<br>
+                                    <strong>Nomor Sumur: </strong> ${feature.properties["Nomor Sumur"]}<br>
+                                    <strong>Manifestasi: </strong> ${feature.properties["Manifestasi"]}<br>
+                                    <strong>Koordinat: </strong> ${feature.properties.latitude}, ${feature.properties.longitude}<br>
+                                    <strong>Kedalaman :</strong> ${feature.properties["Ked.Sumur (m)"]} m<br>
+                                    <strong>Kelurahan/Desa: </strong> ${feature.properties["Kelurahan Desa"]}<br>
+                                    <strong>Kecamatan: </strong> ${feature.properties["Kecamatan"]}<br>
+                                    <strong>Kota/Kabupaten: </strong> ${feature.properties["Kota Kab"]}<br>
+                                    <strong>Provinsi: </strong> ${feature.properties["Provinsi"]}<br>
                                 </div>
                             </div>
                         `;
