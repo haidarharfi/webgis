@@ -136,7 +136,7 @@
         <option value="MAT">MAT dan Kualitas Air Sumur Gali</option>
         <option value="MAT Sumur Dalam">Sumur Dalam</option>
         <option value="Geolistrik">Geolistrik 1 Dimensi</option>
-        
+
       </select>
     </div>
     <div class="mb-3">
@@ -147,8 +147,8 @@
         <option value="AWLR">BBWS Pemali Juana : AWLR</option>
         <option value="Data ESDM">Dinas ESDM Jateng : Sumur Dalam</option>
         <option value="Data Puslitbang PU">Puslitbang PU : Sumur Gali</option>
-        
-        
+
+
       </select>
 
 
@@ -452,7 +452,7 @@
       .catch(error => console.error('Error loading Sumur ATAB GeoJSON:', error));
 
     // Load Sumur Data Sekunder GeoJSON
-    fetch('uploads/data_sekunder.geojson')
+    fetch('uploads/data_puslitbang.geojson')
       .then(response => response.json())
       .then(data => {
         dataSekunderLayer = L.geoJSON(data, {
@@ -694,7 +694,8 @@
           map.removeLayer(sekunderLayer);
         }
 
-        if (this.value === 'Data Puslitbang PU' && dataSekunderLayer) {
+        if (this.value === 'AWLR' && dataSekunderLayer) {
+          console.log('testing');
           sekunderLayer = dataSekunderLayer;
           sekunderLayer.addTo(map);
           sekunderLayer.bringToFront();
@@ -750,30 +751,13 @@
     map.on('layeradd', function (event) {
       if (event.layer === infrastructureLayer) {
         infrastructureLayer.bringToFront();
+        sekunderLayer.bringToFront();
       }
     });
 
     function bringInfrastructureToFront() {
       if (infrastructureLayer) {
         infrastructureLayer.bringToFront();
-      }
-    }
-
-    // SEKUNDER LAYER
-    // Sekunder layer is always on top
-    map.on('overlayadd', function () {
-      bringSekunderToFront();
-    })
-
-    // Tambah Sekunder Layer di Peta
-    map.on('layeradd', function (event) {
-      if (event.layer == sekunderLayer) {
-        sekunderLayer.bringToFront();
-      }
-    })
-
-    function bringSekunderToFront() {
-      if (sekunderLayer) {
         sekunderLayer.bringToFront();
       }
     }
@@ -785,6 +769,7 @@
       imageModal.show();
     }
 
+    // Jalankan Data Sekunder Selection
     addSekunderData();
   </script>
 
