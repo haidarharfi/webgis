@@ -130,6 +130,7 @@
             <label for="infrastructureSelect" class="form-label">Pilih Infrastruktur</label>
             <select class="form-select" id="infrastructureSelect">
                 <option value="">-- Pilih Infrastruktur --</option>
+                <option value="Data Sekunder">Data Sekunder</option>
                 <option value="MAT">MAT</option>
                 <option value="MAT Sumur Dalam">MAT Sumur Dalam</option>
                 <option value="Geolistrik">Geolistrik</option>
@@ -137,6 +138,20 @@
                 <option value="AWLR">AWLR</option>
             </select>
         </div>
+        <div class="mb-3">
+            <label for="datasekunderSelect" class="form-label">Data Sekunder</label>
+            <select class="form-select" id="datasekunderSelect">
+                <option value="">-- Pilih Data Sekunder --</option>
+                <option value="Data Puslitbang PU">Data Puslitbang PU</option>
+                <option value="Data ESDM">Data ESDM</option>
+            </select>
+
+
+
+            
+        </div>
+        
+    
 
         <div class="mb-3">
             <label for="provinceSelect" class="form-label">Pilih Provinsi</label>
@@ -213,6 +228,19 @@
             </div>
         </div>
 
+        <div class="mb-3">
+            <label class="form-label">Legenda</label>
+            <div>
+                <input type="radio" id="Data ESDM" name="mapFilter" value="Data ESDM">
+                <label for="Data ESDM">Data ESDM</label>
+            </div>
+            <div>
+                <input type="radio" id="Data Puslitbang" name="mapFilter" value="Data Puslitbang">
+                <label for="Data Puslitbang">Data Puslitbang PU</label>
+                
+            </div>
+        </div>
+
         <!-- Close Button -->
         <button id="closeSlider" class="btn btn-danger" style="position: absolute; bottom: 20px; left: 20px; width: calc(100% - 40px);">Close</button>
     </div>
@@ -235,7 +263,7 @@
     <script>
         var map = L.map('map', {
             zoomControl: false // Disable the default zoom control to set a new position
-        }).setView([-2.5, 118.2], 5); // Koordinat tengah Indonesia dan zoom level 5
+        }).setView([-7.005145, 110.438125], 9); // Koordinat tengah Indonesia dan zoom level 5
 
         // Add a new zoom control at the bottom left position
         L.control.zoom({
@@ -266,7 +294,7 @@
         var catLayer, wsLayer, batasPropinsiLayer, curahHujanLayer, awlrLayer, geolistrikLayer;
         var infrastructureLayer;
 
-        fetch('uploads/data.geojson')
+        fetch('uploads/sumur_mat.geojson')
             .then(response => response.json())
             .then(data => {
                 geojsonData = data;
@@ -415,6 +443,62 @@
                 });
             })
             .catch(error => console.error('Error loading Sumur ATAB GeoJSON:', error));
+        
+         // Load Sumur Data Sekunder GeoJSON
+        fetch('uploads/data_sekunder.geojson')
+            .then(response => response.json())
+            .then(data => {
+                dataSekunderLayer = L.geoJSON(data, {
+                    pointToLayer: function (feature, latlng) {
+                        return L.circleMarker(latlng, {
+                            radius: 8,
+                            fillColor: "black",
+                            color: "black",
+                            weight: 1,
+                            opacity: 1,
+                            fillOpacity: 0.6
+                        });
+                    },
+                    onEachFeature: function (feature, layer) {
+                        var popupContent = `
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="informasi-dasar-tab" data-bs-toggle="tab" data-bs-target="#informasi-dasar" type="button" role="tab" aria-controls="informasi-dasar" aria-selected="true">Informasi</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="informasi-dasar" role="tabpanel" aria-labelledby="informasi-dasar-tab">
+                                    <strong>No: </strong> ${feature.properties["No"]}<br>
+                                    <strong>No Sumur: </strong> ${feature.properties["No Sumur"]}<br>
+                                    <strong>Pemilik: </strong> ${feature.properties["Pemilik"]}<br>
+                                    <strong>Desa: </strong> ${feature.properties["Desa"]}<br>
+                                    <strong>Kecamatan: </strong> ${feature.properties["Kecamatan"]}<br>
+                                    <strong>Koordinat: </strong> ${feature.properties.Y}, ${feature.properties.X}<br>
+                                    <strong>CAT: </strong> ${feature.properties["CAT"]}<br>
+                                    <strong>Tahun Pembuatan: </strong> ${feature.properties["Tahun Pembuatan"]}<br>
+                                    <strong>Elevasl (mdpl): </strong> ${feature.properties["Elevasl (mdpl)"]}mdpl<br>
+                                    <strong>Kedalaman Pemboran (m): </strong> ${feature.properties["Kedalaman Pemboran (m)"]}m<br>
+                                    <strong>Q (dt): </strong> ${feature.properties["Q (dt)"]}dt<br>
+                                    <strong>SWL (m): </strong> ${feature.properties["SWL (m)"]}m<br>
+                                    <strong>DWL (m): </strong> ${feature.properties["DWL (m)"]}m<br>
+                                    <strong>ΔS (m): </strong> ${feature.properties["ΔS (m)"]}m<br>
+                                    <strong>SC (I/d/m): </strong> ${feature.properties["SC (I/d/m)"]}I/d/m<br>
+                                    <strong>T (m2/jam): </strong> ${feature.properties["T (m2/jam)"]}m2/jam<br>
+                                    <strong>K (m2/jam) : </strong> ${feature.properties["K (m2/jam)"]}m2/jam<br>
+                                    <strong>litologi: </strong> ${feature.properties["litologi"]}<br>
+                                    <strong>EC µOhm/c : </strong> ${feature.properties["EC µOhm/c"]}µOhm/c<br>
+                                    <strong>PH : </strong> ${feature.properties["PH"]}°C<br>
+                                    <strong>Keterangan: </strong> ${feature.properties["Keterangan"]}<br>
+                                </div>
+                            </div>
+                        `;
+                        layer.bindPopup(popupContent);
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading DATA SEKUNDER GeoJSON:', error));
+
+
 
         // Load Geolistrik GeoJSON
         fetch('uploads/geolistrik.geojson')
@@ -489,9 +573,9 @@
                                 <div class="tab-content" id="myTabContent">
                                     <div class="tab-pane fade show active" id="informasi-dasar" role="tabpanel" aria-labelledby="informasi-dasar-tab">
                                         <strong>Titik Obs:</strong> ${feature.properties["Titik Obs"]} <br>
-                                        <strong>Hari/Tanggal:</strong> ${feature.properties["Hari/Tanggal "]} <br>
+                                        <strong>Hari/Tanggal:</strong> ${feature.properties["Hari/Tanggal"]} <br>
                                         <strong>Manifestasi:</strong> ${feature.properties["Manifestasi"]} <br>
-                                        <strong>Z (mdpl):</strong> ${feature.properties["Z (mdpl)"]} m<br>
+                                        <strong>Z (mdpl) DEM :</strong> ${feature.properties["Z (mdpl) DEM"]} m<br>
                                         <strong>Ked.Sumur:</strong> ${feature.properties["Ked.Sumur (m)"]} m<br>
                                         <strong>Ked.MAT:</strong> ${feature.properties["Ked.MAT (m)"]} m<br>
                                         <strong>Tinggi Kep Sumur:</strong> ${feature.properties["Tingg Kep Sumur (m)"]} m<br>
@@ -541,7 +625,11 @@
                 } else if (this.value === 'MAT Sumur Dalam' && sumurAtabLayer) {
                     infrastructureLayer = sumurAtabLayer;
                     infrastructureLayer.addTo(map);
-                    map.setView([-7.035185, 110.515582], 10);
+
+                } else if (this.value === 'Data Sekunder' && dataSekunderLayer) {
+                    infrastructureLayer = dataSekunderLayer;
+                    infrastructureLayer.addTo(map);
+                    
                     infrastructureLayer.bringToFront();
                 } else if (this.value === 'Geolistrik' && geolistrikLayer) {
                     infrastructureLayer = geolistrikLayer;
