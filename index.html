@@ -1,319 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web GIS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web GIS</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
-    <!-- Custom CSS -->
-    <style>
-        #map {
-            height: 100vh;
-            width: 100%;
-            overflow: hidden;
-        }
+  <!-- Custom CSS -->
+  <style>
+    #map {
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
 
-        body, html {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
 
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            margin-bottom: 0;
-        }
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      margin-bottom: 0;
+    }
 
-        body {
-            padding-top: 56px;
-        }
+    body {
+      padding-top: 56px;
+    }
 
-        #sliderMenu {
-            position: fixed;
-            top: 0;
-            right: -300px;
-            width: 300px;
-            height: 100%;
-            background-color: white;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-            transition: right 0.3s ease;
-            z-index: 1001;
-            padding: 20px;
-        }
+    #sliderMenu {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100%;
+      background-color: white;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+      transition: right 0.3s ease;
+      z-index: 1001;
+      padding: 20px;
+    }
 
-        #sliderMenu.show {
-            right: 0;
-        }
+    #sliderMenu.show {
+      right: 0;
+    }
 
-        #toggleSlider {
-            position: absolute;
-            top: 70px;
-            left: 10px;
-            z-index: 1002;
-            background-color: #343a40;
-            color: white;
-            border: none;
-        }
+    #toggleSlider {
+      position: absolute;
+      top: 70px;
+      left: 10px;
+      z-index: 1002;
+      background-color: #343a40;
+      color: white;
+      border: none;
+    }
 
-        .nav-tabs {
-            display: flex;
-            justify-content: space-between;
-        }
+    .nav-tabs {
+      display: flex;
+      justify-content: space-between;
+    }
 
-        .nav-tabs .nav-item {
-            flex: 1;
-            text-align: center;
-        }
+    .nav-tabs .nav-item {
+      flex: 1;
+      text-align: center;
+    }
 
-        /* Tambahkan style baru untuk modal gambar */
-        .modal-dialog.modal-xl {
-            max-width: 90%;
-            margin: 1.75rem auto;
-        }
-        
-        .modal-content {
-            background-color: transparent;
-            border: none;
-        }
-        
-        .modal-body {
-            padding: 0;
-        }
-        
-        .modal-body img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    /* Tambahkan style baru untuk modal gambar */
+    .modal-dialog.modal-xl {
+      max-width: 90%;
+      margin: 1.75rem auto;
+    }
+
+    .modal-content {
+      background-color: transparent;
+      border: none;
+    }
+
+    .modal-body {
+      padding: 0;
+    }
+
+    .modal-body img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="btn" id="toggleSlider">
-                &#9776;
-            </button>
-            <a class="navbar-brand" href="#">SWRM</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Peta</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Admin Button -->
-            <!-- <a href="admin.php" class="btn btn-outline-primary" style="margin-left: auto;">Admin</a> -->
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="btn" id="toggleSlider">
+        &#9776;
+      </button>
+      <a class="navbar-brand" href="#">SWRM</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Peta</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Admin Button -->
+      <!-- <a href="admin.php" class="btn btn-outline-primary" style="margin-left: auto;">Admin</a> -->
+    </div>
+  </nav>
 
-    <!-- Peta -->
-    <div id="map"></div>
+  <!-- Peta -->
+  <div id="map"></div>
 
-    <!-- Slider Menu -->
-    <div id="sliderMenu">
-        <h5>Filter Infrastruktur</h5>
-        <div class="mb-3">
-            <label for="infrastructureSelect" class="form-label">Pilih Infrastruktur</label>
-            <select class="form-select" id="infrastructureSelect">
-                <option value="">-- Pilih Infrastruktur --</option>
-                <option value="Data Sekunder">Data Sekunder</option>
-                <option value="MAT">MAT</option>
-                <option value="MAT Sumur Dalam">MAT Sumur Dalam</option>
-                <option value="Geolistrik">Geolistrik</option>
-                <option value="Curah Hujan">Curah Hujan</option>
-                <option value="AWLR">AWLR</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label for="datasekunderSelect" class="form-label">Data Sekunder</label>
-            <select class="form-select" id="datasekunderSelect">
-                <option value="">-- Pilih Data Sekunder --</option>
-                <option value="Data Puslitbang PU">Data Puslitbang PU</option>
-                <option value="Data ESDM">Data ESDM</option>
-            </select>
-
+  <!-- Slider Menu -->
+  <div id="sliderMenu">
+    <h5>Filter Infrastruktur</h5>
+    <div class="mb-3">
+      <label for="infrastructureSelect" class="form-label">Pilih Infrastruktur</label>
+      <select class="form-select" id="infrastructureSelect">
+        <option value="">-- Pilih Infrastruktur --</option>
+        <option value="MAT">MAT</option>
+        <option value="MAT Sumur Dalam">MAT Sumur Dalam</option>
+        <option value="Geolistrik">Geolistrik</option>
+        <option value="Curah Hujan">Curah Hujan</option>
+        <option value="AWLR">AWLR</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="sekunderSelect" class="form-label">Data Sekunder</label>
+      <select class="form-select" id="sekunderSelect">
+        <option value="">-- Pilih Data Sekunder --</option>
+        <option value="Data Puslitbang PU">Data Puslitbang PU</option>
+        <option value="Data ESDM">Data ESDM</option>
+      </select>
 
 
-            
-        </div>
-        
-    
 
-        <div class="mb-3">
-            <label for="provinceSelect" class="form-label">Pilih Provinsi</label>
-            <select class="form-select" id="provinceSelect">
-                <option value="Semua Provinsi">Semua Provinsi</option>
-                <option value="Aceh">Aceh</option>
-                <option value="Bali">Bali</option>
-                <option value="Banten">Banten</option>
-                <option value="Bengkulu">Bengkulu</option>
-                <option value="DI Yogyakarta">DI Yogyakarta</option>
-                <option value="DKI Jakarta">DKI Jakarta</option>
-                <option value="Gorontalo">Gorontalo</option>
-                <option value="Jambi">Jambi</option>
-                <option value="Jawa Barat">Jawa Barat</option>
-                <option value="Jawa Tengah">Jawa Tengah</option>
-                <option value="Jawa Timur">Jawa Timur</option>
-                <option value="Kalimantan Barat">Kalimantan Barat</option>
-                <option value="Kalimantan Selatan">Kalimantan Selatan</option>
-                <option value="Kalimantan Tengah">Kalimantan Tengah</option>
-                <option value="Kalimantan Timur">Kalimantan Timur</option>
-                <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
-                <option value="Kepulauan Riau">Kepulauan Riau</option>
-                <option value="Lampung">Lampung</option>
-                <option value="Maluku">Maluku</option>
-                <option value="Maluku Utara">Maluku Utara</option>
-                <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
-                <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
-                <option value="Papua">Papua</option>
-                <option value="Papua Barat">Papua Barat</option>
-                <option value="Riau">Riau</option>
-                <option value="Sulawesi Barat">Sulawesi Barat</option>
-                <option value="Sulawesi Selatan">Sulawesi Selatan</option>
-                <option value="Sulawesi Tengah">Sulawesi Tengah</option>
-                <option value="Sulawesi Utara">Sulawesi Utara</option>
-                <option value="Sumatera Barat">Sumatera Barat</option>
-                <option value="Sumatera Selatan">Sumatera Selatan</option>
-                <option value="Sumatera Utara">Sumatera Utara</option>
-            </select>
-        </div>
 
-        <div class="mb-3">
-            <label class="form-label">Jenis Peta</label>
-            <div>
-                <input type="radio" id="osm" name="mapType" value="osm" checked>
-                <label for="osm">OpenStreetMap</label>
-            </div>
-            <div>
-                <input type="radio" id="otm" name="mapType" value="otm">
-                <label for="otm">OpenTopoMap</label>
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Filter Peta</label>
-            <div>
-                <input type="checkbox" id="cat" name="mapFilter" value="cat">
-                <label for="cat">Peta CAT</label>
-            </div>
-            <div>
-                <input type="checkbox" id="ws" name="mapFilter" value="ws">
-                <label for="ws">Peta WS</label>
-            </div>
-            <div>
-                <input type="checkbox" id="hidrogeologi" name="mapFilter" value="hidrogeologi">
-                <label for="hidrogeologi">Peta Hidrogeologi</label>
-            </div>
-            <div>
-                <input type="checkbox" id="geologi" name="mapFilter" value="geologi">
-                <label for="geologi">Peta Geologi</label>
-            </div>
-            <div>
-                <input type="checkbox" id="batasPropinsi" name="mapFilter" value="batasPropinsi">
-                <label for="batasPropinsi">Peta Batas Propinsi</label>
-            </div>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label">Legenda</label>
-            <div>
-                <input type="radio" id="Data ESDM" name="mapFilter" value="Data ESDM">
-                <label for="Data ESDM">Data ESDM</label>
-            </div>
-            <div>
-                <input type="radio" id="Data Puslitbang" name="mapFilter" value="Data Puslitbang">
-                <label for="Data Puslitbang">Data Puslitbang PU</label>
-                
-            </div>
-        </div>
-
-        <!-- Close Button -->
-        <button id="closeSlider" class="btn btn-danger" style="position: absolute; bottom: 20px; left: 20px; width: calc(100% - 40px);">Close</button>
     </div>
 
-    <!-- Tambahkan modal untuk menampilkan gambar yang diperbesar -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <img src="" id="modalImage" alt="Foto Geolistrik">
-                </div>
-            </div>
-        </div>
+
+
+    <div class="mb-3">
+      <label for="provinceSelect" class="form-label">Pilih Provinsi</label>
+      <select class="form-select" id="provinceSelect">
+        <option value="Semua Provinsi">Semua Provinsi</option>
+        <option value="Aceh">Aceh</option>
+        <option value="Bali">Bali</option>
+        <option value="Banten">Banten</option>
+        <option value="Bengkulu">Bengkulu</option>
+        <option value="DI Yogyakarta">DI Yogyakarta</option>
+        <option value="DKI Jakarta">DKI Jakarta</option>
+        <option value="Gorontalo">Gorontalo</option>
+        <option value="Jambi">Jambi</option>
+        <option value="Jawa Barat">Jawa Barat</option>
+        <option value="Jawa Tengah">Jawa Tengah</option>
+        <option value="Jawa Timur">Jawa Timur</option>
+        <option value="Kalimantan Barat">Kalimantan Barat</option>
+        <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+        <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+        <option value="Kalimantan Timur">Kalimantan Timur</option>
+        <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+        <option value="Kepulauan Riau">Kepulauan Riau</option>
+        <option value="Lampung">Lampung</option>
+        <option value="Maluku">Maluku</option>
+        <option value="Maluku Utara">Maluku Utara</option>
+        <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+        <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+        <option value="Papua">Papua</option>
+        <option value="Papua Barat">Papua Barat</option>
+        <option value="Riau">Riau</option>
+        <option value="Sulawesi Barat">Sulawesi Barat</option>
+        <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+        <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+        <option value="Sulawesi Utara">Sulawesi Utara</option>
+        <option value="Sumatera Barat">Sumatera Barat</option>
+        <option value="Sumatera Selatan">Sumatera Selatan</option>
+        <option value="Sumatera Utara">Sumatera Utara</option>
+      </select>
     </div>
 
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <div class="mb-3">
+      <label class="form-label">Jenis Peta</label>
+      <div>
+        <input type="radio" id="osm" name="mapType" value="osm" checked>
+        <label for="osm">OpenStreetMap</label>
+      </div>
+      <div>
+        <input type="radio" id="otm" name="mapType" value="otm">
+        <label for="otm">OpenTopoMap</label>
+      </div>
+    </div>
 
-    <!-- Custom Script untuk Peta -->
-    <script>
-        var map = L.map('map', {
-            zoomControl: false // Disable the default zoom control to set a new position
-        }).setView([-7.005145, 110.438125], 9); // Koordinat tengah Indonesia dan zoom level 5
+    <div class="mb-3">
+      <label class="form-label">Filter Peta</label>
+      <div>
+        <input type="checkbox" id="cat" name="mapFilter" value="cat">
+        <label for="cat">Peta CAT</label>
+      </div>
+      <div>
+        <input type="checkbox" id="ws" name="mapFilter" value="ws">
+        <label for="ws">Peta WS</label>
+      </div>
+      <div>
+        <input type="checkbox" id="hidrogeologi" name="mapFilter" value="hidrogeologi">
+        <label for="hidrogeologi">Peta Hidrogeologi</label>
+      </div>
+      <div>
+        <input type="checkbox" id="geologi" name="mapFilter" value="geologi">
+        <label for="geologi">Peta Geologi</label>
+      </div>
+      <div>
+        <input type="checkbox" id="batasPropinsi" name="mapFilter" value="batasPropinsi">
+        <label for="batasPropinsi">Peta Batas Propinsi</label>
+      </div>
+    </div>
 
-        // Add a new zoom control at the bottom left position
-        L.control.zoom({
-            position: 'bottomleft'
-        }).addTo(map);
+    <div class="mb-3">
+      <label class="form-label">Legenda</label>
+      <div>
+        <input type="radio" id="Data ESDM" name="mapFilter" value="Data ESDM">
+        <label for="Data ESDM">Data ESDM</label>
+      </div>
+      <div>
+        <input type="radio" id="Data Puslitbang" name="mapFilter" value="Data Puslitbang">
+        <label for="Data Puslitbang">Data Puslitbang PU</label>
 
-        var osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
+      </div>
+    </div>
 
-        var otmLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenTopoMap contributors'
-        });
+    <!-- Close Button -->
+    <button id="closeSlider" class="btn btn-danger"
+      style="position: absolute; bottom: 20px; left: 20px; width: calc(100% - 40px);">Close</button>
+  </div>
 
-        document.querySelectorAll('input[name="mapType"]').forEach(function (elem) {
-            elem.addEventListener("change", function (event) {
-                if (event.target.value === "osm") {
-                    map.removeLayer(otmLayer);
-                    map.addLayer(osmLayer);
-                } else {
-                    map.removeLayer(osmLayer);
-                    map.addLayer(otmLayer);
-                }
-            });
-        });
+  <!-- Tambahkan modal untuk menampilkan gambar yang diperbesar -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" id="modalImage" alt="Foto Geolistrik">
+        </div>
+      </div>
+    </div>
+  </div>
 
-        var geojsonData;
-        var catLayer, wsLayer, batasPropinsiLayer, curahHujanLayer, awlrLayer, geolistrikLayer;
-        var infrastructureLayer;
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-        fetch('uploads/sumur_mat.geojson')
-            .then(response => response.json())
-            .then(data => {
-                geojsonData = data;
-                addGroundWaterQualityData();
-            })
-            .catch(error => console.error('Error loading GeoJSON:', error));
+  <!-- Custom Script untuk Peta -->
+  <script>
+    var map = L.map('map', {
+      zoomControl: false // Disable the default zoom control to set a new position
+    }).setView([-7.005145, 110.438125], 9); // Koordinat tengah Indonesia dan zoom level 5
 
-        // Load CAT GeoJSON
-        fetch('uploads/cat.geojson')
-            .then(response => response.json())
-            .then(data => {
-                catLayer = L.geoJSON(data, {
-                    style: {
-                        color: 'blue',
-                        weight: 2,
-                        fillOpacity: 0.2
-                    },
-                    onEachFeature: function(feature, layer) {
-                        var popupContent = `
+    // Add a new zoom control at the bottom left position
+    L.control.zoom({
+      position: 'bottomleft'
+    }).addTo(map);
+
+    var osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var otmLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenTopoMap contributors'
+    });
+
+    document.querySelectorAll('input[name="mapType"]').forEach(function (elem) {
+      elem.addEventListener("change", function (event) {
+        if (event.target.value === "osm") {
+          map.removeLayer(otmLayer);
+          map.addLayer(osmLayer);
+        } else {
+          map.removeLayer(osmLayer);
+          map.addLayer(otmLayer);
+        }
+      });
+    });
+
+    var geojsonData;
+    var catLayer, wsLayer, batasPropinsiLayer, curahHujanLayer, awlrLayer, geolistrikLayer;
+    var infrastructureLayer;
+    var sekunderLayer;
+
+    fetch('uploads/sumur_mat.geojson')
+      .then(response => response.json())
+      .then(data => {
+        geojsonData = data;
+        addGroundWaterQualityData();
+      })
+      .catch(error => console.error('Error loading GeoJSON:', error));
+
+    // Load CAT GeoJSON
+    fetch('uploads/cat.geojson')
+      .then(response => response.json())
+      .then(data => {
+        catLayer = L.geoJSON(data, {
+          style: {
+            color: 'blue',
+            weight: 2,
+            fillOpacity: 0.2
+          },
+          onEachFeature: function (feature, layer) {
+            var popupContent = `
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="informasi-dasar-tab" data-bs-toggle="tab" data-bs-target="#informasi-dasar" type="button" role="tab" aria-controls="informasi-dasar" aria-selected="true">Informasi</button>
@@ -328,98 +332,98 @@
                             </div>
                         </div>
                         `;
-                        layer.bindPopup(popupContent);
-                    }
-                })
-            })
-            .catch(error => console.error('Error loading CAT GeoJSON:', error));
+            layer.bindPopup(popupContent);
+          }
+        })
+      })
+      .catch(error => console.error('Error loading CAT GeoJSON:', error));
 
-        // Load WS GeoJSON
-        fetch('uploads/ws.geojson')
-            .then(response => response.json())
-            .then(data => {
-                wsLayer = L.geoJSON(data, {
-                    style: {
-                        color: 'green',
-                        weight: 2,
-                        fillOpacity: 0.2
-                    }
-                });
-            })
-            .catch(error => console.error('Error loading WS GeoJSON:', error));
+    // Load WS GeoJSON
+    fetch('uploads/ws.geojson')
+      .then(response => response.json())
+      .then(data => {
+        wsLayer = L.geoJSON(data, {
+          style: {
+            color: 'green',
+            weight: 2,
+            fillOpacity: 0.2
+          }
+        });
+      })
+      .catch(error => console.error('Error loading WS GeoJSON:', error));
 
-        // Load Batas Propinsi GeoJSON
-        fetch('uploads/batas_propinsi.geojson')
-            .then(response => response.json())
-            .then(data => {
-                batasPropinsiLayer = L.geoJSON(data, {
-                    style: {
-                        color: 'red',
-                        weight: 2,
-                        fillOpacity: 0.1
-                    }
-                });
-            })
-            .catch(error => console.error('Error loading Batas Propinsi GeoJSON:', error));
+    // Load Batas Propinsi GeoJSON
+    fetch('uploads/batas_propinsi.geojson')
+      .then(response => response.json())
+      .then(data => {
+        batasPropinsiLayer = L.geoJSON(data, {
+          style: {
+            color: 'red',
+            weight: 2,
+            fillOpacity: 0.1
+          }
+        });
+      })
+      .catch(error => console.error('Error loading Batas Propinsi GeoJSON:', error));
 
-        // Load Curah Hujan GeoJSON
-        fetch('uploads/curah_hujan.geojson')
-            .then(response => response.json())
-            .then(data => {
-                curahHujanLayer = L.geoJSON(data, {
-                    pointToLayer: function (feature, latlng) {
-                        return L.circleMarker(latlng, {
-                            radius: 8,
-                            fillColor: "purple",
-                            color: "black",
-                            weight: 1,
-                            opacity: 1,
-                            fillOpacity: 0.6
-                        });
-                    },
-                    onEachFeature: function (feature, layer) {
-                        var popupContent = '<table>';
-                        for (var key in feature.properties) {
-                            popupContent += '<tr><th>' + key + '</th><td>' + feature.properties[key] + '</td></tr>';
-                        }
-                        popupContent += '</table>';
-                        layer.bindPopup(popupContent);
-                    }
-                });
-            })
-            .catch(error => console.error('Error loading Curah Hujan GeoJSON:', error));
+    // Load Curah Hujan GeoJSON
+    fetch('uploads/curah_hujan.geojson')
+      .then(response => response.json())
+      .then(data => {
+        curahHujanLayer = L.geoJSON(data, {
+          pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, {
+              radius: 8,
+              fillColor: "purple",
+              color: "black",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.6
+            });
+          },
+          onEachFeature: function (feature, layer) {
+            var popupContent = '<table>';
+            for (var key in feature.properties) {
+              popupContent += '<tr><th>' + key + '</th><td>' + feature.properties[key] + '</td></tr>';
+            }
+            popupContent += '</table>';
+            layer.bindPopup(popupContent);
+          }
+        });
+      })
+      .catch(error => console.error('Error loading Curah Hujan GeoJSON:', error));
 
-        // Load AWLR GeoJSON
-        fetch('uploads/awlr.geojson')
-            .then(response => response.json())
-            .then(data => {
-                awlrLayer = L.geoJSON(data, {
-                    style: {
-                        color: 'orange',
-                        weight: 2,
-                        fillOpacity: 0.2
-                    }
-                });
-            })
-            .catch(error => console.error('Error loading AWLR GeoJSON:', error));
+    // Load AWLR GeoJSON
+    fetch('uploads/awlr.geojson')
+      .then(response => response.json())
+      .then(data => {
+        awlrLayer = L.geoJSON(data, {
+          style: {
+            color: 'orange',
+            weight: 2,
+            fillOpacity: 0.2
+          }
+        });
+      })
+      .catch(error => console.error('Error loading AWLR GeoJSON:', error));
 
-        // Load Sumur ATAB GeoJSON
-        fetch('uploads/sumur_atab.geojson')
-            .then(response => response.json())
-            .then(data => {
-                sumurAtabLayer = L.geoJSON(data, {
-                    pointToLayer: function (feature, latlng) {
-                        return L.circleMarker(latlng, {
-                            radius: 8,
-                            fillColor: "red",
-                            color: "black",
-                            weight: 1,
-                            opacity: 1,
-                            fillOpacity: 0.6
-                        });
-                    },
-                    onEachFeature: function (feature, layer) {
-                        var popupContent = `
+    // Load Sumur ATAB GeoJSON
+    fetch('uploads/sumur_atab.geojson')
+      .then(response => response.json())
+      .then(data => {
+        sumurAtabLayer = L.geoJSON(data, {
+          pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, {
+              radius: 8,
+              fillColor: "red",
+              color: "black",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.6
+            });
+          },
+          onEachFeature: function (feature, layer) {
+            var popupContent = `
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="informasi-dasar-tab" data-bs-toggle="tab" data-bs-target="#informasi-dasar" type="button" role="tab" aria-controls="informasi-dasar" aria-selected="true">Informasi</button>
@@ -438,29 +442,29 @@
                                 </div>
                             </div>
                         `;
-                        layer.bindPopup(popupContent);
-                    }
-                });
-            })
-            .catch(error => console.error('Error loading Sumur ATAB GeoJSON:', error));
-        
-         // Load Sumur Data Sekunder GeoJSON
-        fetch('uploads/data_sekunder.geojson')
-            .then(response => response.json())
-            .then(data => {
-                dataSekunderLayer = L.geoJSON(data, {
-                    pointToLayer: function (feature, latlng) {
-                        return L.circleMarker(latlng, {
-                            radius: 8,
-                            fillColor: "black",
-                            color: "black",
-                            weight: 1,
-                            opacity: 1,
-                            fillOpacity: 0.6
-                        });
-                    },
-                    onEachFeature: function (feature, layer) {
-                        var popupContent = `
+            layer.bindPopup(popupContent);
+          }
+        });
+      })
+      .catch(error => console.error('Error loading Sumur ATAB GeoJSON:', error));
+
+    // Load Sumur Data Sekunder GeoJSON
+    fetch('uploads/data_sekunder.geojson')
+      .then(response => response.json())
+      .then(data => {
+        dataSekunderLayer = L.geoJSON(data, {
+          pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, {
+              radius: 8,
+              fillColor: "black",
+              color: "black",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.6
+            });
+          },
+          onEachFeature: function (feature, layer) {
+            var popupContent = `
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="informasi-dasar-tab" data-bs-toggle="tab" data-bs-target="#informasi-dasar" type="button" role="tab" aria-controls="informasi-dasar" aria-selected="true">Informasi</button>
@@ -492,31 +496,31 @@
                                 </div>
                             </div>
                         `;
-                        layer.bindPopup(popupContent);
-                    }
-                });
-            })
-            .catch(error => console.error('Error loading DATA SEKUNDER GeoJSON:', error));
+            layer.bindPopup(popupContent);
+          }
+        });
+      })
+      .catch(error => console.error('Error loading DATA SEKUNDER GeoJSON:', error));
 
 
 
-        // Load Geolistrik GeoJSON
-        fetch('uploads/geolistrik.geojson')
-            .then(response => response.json())
-            .then(data => {
-                geolistrikLayer = L.geoJSON(data, {
-                    pointToLayer: function (feature, latlng) {
-                        return L.circleMarker(latlng, {
-                            radius: 8,
-                            fillColor: "yellow",
-                            color: "black",
-                            weight: 1,
-                            opacity: 1,
-                            fillOpacity: 0.6
-                        });
-                    },
-                    onEachFeature: function (feature, layer) {
-                        var popupContent = `
+    // Load Geolistrik GeoJSON
+    fetch('uploads/geolistrik.geojson')
+      .then(response => response.json())
+      .then(data => {
+        geolistrikLayer = L.geoJSON(data, {
+          pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, {
+              radius: 8,
+              fillColor: "yellow",
+              color: "black",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.6
+            });
+          },
+          onEachFeature: function (feature, layer) {
+            var popupContent = `
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="informasi-dasar-tab" data-bs-toggle="tab" data-bs-target="#informasi-dasar" type="button" role="tab" aria-controls="informasi-dasar" aria-selected="true">Informasi</button>
@@ -542,25 +546,25 @@
                                 </div>
                             </div>
                         `;
-                        layer.bindPopup(popupContent);
-                    }
-                });
-            })
-            .catch(error => console.error('Error loading Geolistrik GeoJSON:', error));
+            layer.bindPopup(popupContent);
+          }
+        });
+      })
+      .catch(error => console.error('Error loading Geolistrik GeoJSON:', error));
 
-        function addGroundWaterQualityData() {
-            var infrastructureSelect = document.getElementById('infrastructureSelect');
-            var provinceSelect = document.getElementById('provinceSelect');
+    function addGroundWaterQualityData() {
+      var infrastructureSelect = document.getElementById('infrastructureSelect');
+      var provinceSelect = document.getElementById('provinceSelect');
 
-            infrastructureSelect.addEventListener('change', function() {
-                if (infrastructureLayer) {
-                    map.removeLayer(infrastructureLayer);
-                }
+      infrastructureSelect.addEventListener('change', function () {
+        if (infrastructureLayer) {
+          map.removeLayer(infrastructureLayer);
+        }
 
-                if (this.value === 'MAT' && geojsonData) {
-                    infrastructureLayer = L.geoJSON(geojsonData, {
-                        onEachFeature: function (feature, layer) {
-                            var popupContent = `
+        if (this.value === 'MAT' && geojsonData) {
+          infrastructureLayer = L.geoJSON(geojsonData, {
+            onEachFeature: function (feature, layer) {
+              var popupContent = `
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link active" id="informasi-dasar-tab" data-bs-toggle="tab" data-bs-target="#informasi-dasar" type="button" role="tab" aria-controls="informasi-dasar" aria-selected="true">Informasi Dasar</button>
@@ -591,162 +595,198 @@
                                         <strong>EC:</strong> ${feature.properties["EC (mS)"]} mS<br>
                                     </div>
                                     <div class="tab-pane fade" id="lokasi" role="tabpanel" aria-labelledby="lokasi-tab">
-                                        <strong>Kelurahan/Desa:</strong> ${feature.properties["Kelurahan/Desa"] }<br>
-                                        <strong>Kecamatan:</strong> ${feature.properties.Kecamatan }<br>
+                                        <strong>Kelurahan/Desa:</strong> ${feature.properties["Kelurahan/Desa"]}<br>
+                                        <strong>Kecamatan:</strong> ${feature.properties.Kecamatan}<br>
                                         <strong>Kota/Kab:</strong> ${feature.properties["Kota/Kab"]}<br>
                                         <strong>Provinsi:</strong> ${feature.properties.Provinsi}<br>
                                         <strong>Coordinates:</strong> ${feature.geometry.coordinates[1]}, ${feature.geometry.coordinates[0]}
                                     </div>
                                 </div>
                             `;
-                            layer.bindPopup(popupContent);
-                        },
-                        pointToLayer: function (feature, latlng) {
-                            return L.circleMarker(latlng, {
-                                radius: 8,
-                                fillColor: "blue",
-                                color: "black",
-                                weight: 1,
-                                opacity: 1,
-                                fillOpacity: 0.6
-                            });
-                        }
-                    
-                    }).addTo(map);
-                    infrastructureLayer.bringToFront();
-                } else if (this.value === 'Curah Hujan' && curahHujanLayer) {
-                    infrastructureLayer = curahHujanLayer;
-                    infrastructureLayer.addTo(map);
-                    infrastructureLayer.bringToFront();
-                } else if (this.value === 'AWLR' && awlrLayer) {
-                    infrastructureLayer = awlrLayer;
-                    infrastructureLayer.addTo(map);
-                    infrastructureLayer.bringToFront();
-                } else if (this.value === 'MAT Sumur Dalam' && sumurAtabLayer) {
-                    infrastructureLayer = sumurAtabLayer;
-                    infrastructureLayer.addTo(map);
+              layer.bindPopup(popupContent);
+            },
+            pointToLayer: function (feature, latlng) {
+              return L.circleMarker(latlng, {
+                radius: 8,
+                fillColor: "blue",
+                color: "black",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.6
+              });
+            }
 
-                } else if (this.value === 'Data Sekunder' && dataSekunderLayer) {
-                    infrastructureLayer = dataSekunderLayer;
-                    infrastructureLayer.addTo(map);
-                    
-                    infrastructureLayer.bringToFront();
-                } else if (this.value === 'Geolistrik' && geolistrikLayer) {
-                    infrastructureLayer = geolistrikLayer;
-                    infrastructureLayer.addTo(map);
-                    infrastructureLayer.bringToFront();
-                }
-            });
+          }).addTo(map);
+          infrastructureLayer.bringToFront();
+        } else if (this.value === 'Curah Hujan' && curahHujanLayer) {
+          infrastructureLayer = curahHujanLayer;
+          infrastructureLayer.addTo(map);
+          infrastructureLayer.bringToFront();
+        } else if (this.value === 'AWLR' && awlrLayer) {
+          infrastructureLayer = awlrLayer;
+          infrastructureLayer.addTo(map);
+          infrastructureLayer.bringToFront();
+        } else if (this.value === 'MAT Sumur Dalam' && sumurAtabLayer) {
+          infrastructureLayer = sumurAtabLayer;
+          infrastructureLayer.addTo(map);
+        } else if (this.value === 'Geolistrik' && geolistrikLayer) {
+          infrastructureLayer = geolistrikLayer;
+          infrastructureLayer.addTo(map);
+          infrastructureLayer.bringToFront();
+        }
+      });
 
-            provinceSelect.addEventListener('change', function() {
-                var provinceCoordinates = {
-                    "Aceh": [4.695135, 96.749397],
-                    "Bali": [-8.340539, 115.092045],
-                    "Banten": [-6.405817, 106.064018],
-                    "Bengkulu": [-3.577847, 102.346387],
-                    "DI Yogyakarta": [-7.795580, 110.369490],
-                    "DKI Jakarta": [-6.208763, 106.845599],
-                    "Gorontalo": [0.699937, 122.446723],
-                    "Jambi": [-1.485197, 102.438057],
-                    "Jawa Barat": [-6.917464, 107.619123],
-                    "Jawa Tengah": [-7.005145, 110.438125],
-                    "Jawa Timur": [-7.250445, 112.768845],
-                    "Kalimantan Barat": [-0.132226, 111.096962],
-                    "Kalimantan Selatan": [-3.092641, 115.283758],
-                    "Kalimantan Tengah": [-1.681487, 113.382354],
-                    "Kalimantan Timur": [0.538654, 116.419389],
-                    "Kepulauan Bangka Belitung": [-2.741051, 106.440587],
-                    "Kepulauan Riau": [3.945640, 108.142866],
-                    "Lampung": [-5.450000, 105.266667],
-                    "Maluku": [-3.238461, 130.145273],
-                    "Maluku Utara": [0.634815, 127.972177],
-                    "Nusa Tenggara Barat": [-8.652933, 117.361647],
-                    "Nusa Tenggara Timur": [-8.657382, 121.079370],
-                    "Papua": [-4.269928, 138.080353],
-                    "Papua Barat": [-1.336115, 133.174716],
-                    "Riau": [0.293347, 101.706829],
-                    "Sulawesi Barat": [-2.843720, 119.232078],
-                    "Sulawesi Selatan": [-3.668799, 119.974053],
-                    "Sulawesi Tengah": [-1.430457, 121.445617],
-                    "Sulawesi Utara": [1.493056, 124.841389],
-                    "Sumatera Barat": [-0.739939, 100.800005],
-                    "Sumatera Selatan": [-3.319437, 104.914712],
-                    "Sumatera Utara": [2.115354, 99.545097]
-                };
+      provinceSelect.addEventListener('change', function () {
+        var provinceCoordinates = {
+          "Aceh": [4.695135, 96.749397],
+          "Bali": [-8.340539, 115.092045],
+          "Banten": [-6.405817, 106.064018],
+          "Bengkulu": [-3.577847, 102.346387],
+          "DI Yogyakarta": [-7.795580, 110.369490],
+          "DKI Jakarta": [-6.208763, 106.845599],
+          "Gorontalo": [0.699937, 122.446723],
+          "Jambi": [-1.485197, 102.438057],
+          "Jawa Barat": [-6.917464, 107.619123],
+          "Jawa Tengah": [-7.005145, 110.438125],
+          "Jawa Timur": [-7.250445, 112.768845],
+          "Kalimantan Barat": [-0.132226, 111.096962],
+          "Kalimantan Selatan": [-3.092641, 115.283758],
+          "Kalimantan Tengah": [-1.681487, 113.382354],
+          "Kalimantan Timur": [0.538654, 116.419389],
+          "Kepulauan Bangka Belitung": [-2.741051, 106.440587],
+          "Kepulauan Riau": [3.945640, 108.142866],
+          "Lampung": [-5.450000, 105.266667],
+          "Maluku": [-3.238461, 130.145273],
+          "Maluku Utara": [0.634815, 127.972177],
+          "Nusa Tenggara Barat": [-8.652933, 117.361647],
+          "Nusa Tenggara Timur": [-8.657382, 121.079370],
+          "Papua": [-4.269928, 138.080353],
+          "Papua Barat": [-1.336115, 133.174716],
+          "Riau": [0.293347, 101.706829],
+          "Sulawesi Barat": [-2.843720, 119.232078],
+          "Sulawesi Selatan": [-3.668799, 119.974053],
+          "Sulawesi Tengah": [-1.430457, 121.445617],
+          "Sulawesi Utara": [1.493056, 124.841389],
+          "Sumatera Barat": [-0.739939, 100.800005],
+          "Sumatera Selatan": [-3.319437, 104.914712],
+          "Sumatera Utara": [2.115354, 99.545097]
+        };
 
-                var selectedProvince = this.value;
-                if (selectedProvince === "Semua Provinsi") {
-                    map.setView([-2.5, 118.2], 5); // Set view to the center of Indonesia
-                } else if (selectedProvince && provinceCoordinates[selectedProvince]) {
-                    var coordinates = provinceCoordinates[selectedProvince];
-                    map.setView(coordinates, 8); // Zoom level 8 for province level
-                }
-            });
+        var selectedProvince = this.value;
+        if (selectedProvince === "Semua Provinsi") {
+          map.setView([-2.5, 118.2], 5); // Set view to the center of Indonesia
+        } else if (selectedProvince && provinceCoordinates[selectedProvince]) {
+          var coordinates = provinceCoordinates[selectedProvince];
+          map.setView(coordinates, 8); // Zoom level 8 for province level
+        }
+      });
+    }
+
+    // Menampilkan Data Sekunder
+    function addSekunderData() {
+      var sekunderSelect = document.getElementById('sekunderSelect');
+
+      sekunderSelect.addEventListener('change', function () {
+        if (sekunderLayer) {
+          map.removeLayer(sekunderLayer);
         }
 
-        document.getElementById('toggleSlider').addEventListener('click', function() {
-            document.getElementById('sliderMenu').classList.toggle('show');
-        });
-
-        document.getElementById('closeSlider').addEventListener('click', function() {
-            document.getElementById('sliderMenu').classList.remove('show');
-        });
-
-        // Add event listeners for the new checkboxes
-        document.getElementById('cat').addEventListener('change', function() {
-            if (this.checked) {
-                catLayer.addTo(map);
-            } else {
-                map.removeLayer(catLayer);
-            }
-            bringInfrastructureToFront();
-        });
-
-        document.getElementById('ws').addEventListener('change', function() {
-            if (this.checked) {
-                wsLayer.addTo(map);
-            } else {
-                map.removeLayer(wsLayer);
-            }
-            bringInfrastructureToFront();
-        });
-
-        document.getElementById('batasPropinsi').addEventListener('change', function() {
-            if (this.checked) {
-                batasPropinsiLayer.addTo(map);
-            } else {
-                map.removeLayer(batasPropinsiLayer);
-            }
-            bringInfrastructureToFront();
-        });
-
-        // Ensure that the infrastructure layer is always on top
-        map.on('overlayadd', function() {
-            bringInfrastructureToFront();
-        });
-
-        // Bring infrastructure layers to front when added
-        map.on('layeradd', function(event) {
-            if (event.layer === infrastructureLayer) {
-                infrastructureLayer.bringToFront();
-            }
-        });
-
-        function bringInfrastructureToFront() {
-            if (infrastructureLayer) {
-                infrastructureLayer.bringToFront();
-            }
+        if (this.value === 'Data Puslitbang PU' && dataSekunderLayer) {
+          sekunderLayer = dataSekunderLayer;
+          sekunderLayer.addTo(map);
+          sekunderLayer.bringToFront();
+        } else if (this.value === 'Data ESDM') {
+          // masukan data ESD 
         }
+      });
+    }
 
-        // Tambahkan fungsi untuk menampilkan modal gambar
-        function showImageModal(src) {
-            document.getElementById('modalImage').src = src;
-            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
-            imageModal.show();
-        }
-    </script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    document.getElementById('toggleSlider').addEventListener('click', function () {
+      document.getElementById('sliderMenu').classList.toggle('show');
+    });
+
+    document.getElementById('closeSlider').addEventListener('click', function () {
+      document.getElementById('sliderMenu').classList.remove('show');
+    });
+
+    // Add event listeners for the new checkboxes
+    document.getElementById('cat').addEventListener('change', function () {
+      if (this.checked) {
+        catLayer.addTo(map);
+      } else {
+        map.removeLayer(catLayer);
+      }
+      bringInfrastructureToFront();
+    });
+
+    document.getElementById('ws').addEventListener('change', function () {
+      if (this.checked) {
+        wsLayer.addTo(map);
+      } else {
+        map.removeLayer(wsLayer);
+      }
+      bringInfrastructureToFront();
+    });
+
+    document.getElementById('batasPropinsi').addEventListener('change', function () {
+      if (this.checked) {
+        batasPropinsiLayer.addTo(map);
+      } else {
+        map.removeLayer(batasPropinsiLayer);
+      }
+      bringInfrastructureToFront();
+    });
+
+    // Ensure that the infrastructure layer is always on top
+    map.on('overlayadd', function () {
+      bringInfrastructureToFront();
+    });
+
+    // Bring infrastructure layers to front when added
+    map.on('layeradd', function (event) {
+      if (event.layer === infrastructureLayer) {
+        infrastructureLayer.bringToFront();
+      }
+    });
+
+    function bringInfrastructureToFront() {
+      if (infrastructureLayer) {
+        infrastructureLayer.bringToFront();
+      }
+    }
+
+    // SEKUNDER LAYER
+    // Sekunder layer is always on top
+    map.on('overlayadd', function () {
+      bringSekunderToFront();
+    })
+
+    // Tambah Sekunder Layer di Peta
+    map.on('layeradd', function (event) {
+      if (event.layer == sekunderLayer) {
+        sekunderLayer.bringToFront();
+      }
+    })
+
+    function bringSekunderToFront() {
+      if (sekunderLayer) {
+        sekunderLayer.bringToFront();
+      }
+    }
+
+    // Tambahkan fungsi untuk menampilkan modal gambar
+    function showImageModal(src) {
+      document.getElementById('modalImage').src = src;
+      var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+      imageModal.show();
+    }
+
+    addSekunderData();
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
