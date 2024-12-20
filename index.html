@@ -130,25 +130,22 @@
   <div id="sliderMenu">
     <h5>Filter Infrastruktur</h5>
     <div class="mb-3">
-      <label for="infrastructureSelect" class="form-label">Data Primer</label>
+      <label for="infrastructureSelect" class="form-label">Pilih Infrastruktur</label>
       <select class="form-select" id="infrastructureSelect">
-        <option value="">-- Pilih Data Primer --</option>
-        <option value="MAT">MAT dan Kualitas Air Sumur Gali</option>
-        <option value="MAT Sumur Dalam">Sumur Dalam</option>
-        <option value="Geolistrik">Geolistrik 1 Dimensi</option>
-        
+        <option value="">-- Pilih Infrastruktur --</option>
+        <option value="MAT">MAT</option>
+        <option value="MAT Sumur Dalam">MAT Sumur Dalam</option>
+        <option value="Geolistrik">Geolistrik</option>
+        <option value="Curah Hujan">Curah Hujan</option>
+        <option value="AWLR">AWLR</option>
       </select>
     </div>
     <div class="mb-3">
       <label for="sekunderSelect" class="form-label">Data Sekunder</label>
       <select class="form-select" id="sekunderSelect">
         <option value="">-- Pilih Data Sekunder --</option>
-        <option value="Curah Hujan">BBWS Pemali Juana : Curah Hujan</option>
-        <option value="AWLR">BBWS Pemali Juana : AWLR</option>
-        <option value="Data ESDM">Dinas ESDM Jateng : Sumur Dalam</option>
-        <option value="Data Puslitbang PU">Puslitbang PU : Sumur Gali</option>
-        
-        
+        <option value="Data Puslitbang PU">Data Puslitbang PU</option>
+        <option value="Data ESDM">Data ESDM</option>
       </select>
 
 
@@ -437,7 +434,7 @@
                                     <strong>Nomor Sumur: </strong> ${feature.properties["Nomor Sumur"]}<br>
                                     <strong>Manifestasi: </strong> ${feature.properties["Manifestasi"]}<br>
                                     <strong>Koordinat: </strong> ${feature.properties.latitude}, ${feature.properties.longitude}<br>
-                                    <strong>Kedalaman Sumur :</strong> ${feature.properties["Ked.Sumur (m)"]} m<br>
+                                    <strong>Kedalaman :</strong> ${feature.properties["Ked.Sumur (m)"]} m<br>
                                     <strong>Kelurahan/Desa: </strong> ${feature.properties["Kelurahan Desa"]}<br>
                                     <strong>Kecamatan: </strong> ${feature.properties["Kecamatan"]}<br>
                                     <strong>Kota/Kabupaten: </strong> ${feature.properties["Kota Kab"]}<br>
@@ -452,7 +449,7 @@
       .catch(error => console.error('Error loading Sumur ATAB GeoJSON:', error));
 
     // Load Sumur Data Sekunder GeoJSON
-    fetch('uploads/data_sekunder.geojson')
+    fetch('uploads/data_puslitbang.geojson')
       .then(response => response.json())
       .then(data => {
         dataSekunderLayer = L.geoJSON(data, {
@@ -756,24 +753,6 @@
     function bringInfrastructureToFront() {
       if (infrastructureLayer) {
         infrastructureLayer.bringToFront();
-      }
-    }
-
-    // SEKUNDER LAYER
-    // Sekunder layer is always on top
-    map.on('overlayadd', function () {
-      bringSekunderToFront();
-    })
-
-    // Tambah Sekunder Layer di Peta
-    map.on('layeradd', function (event) {
-      if (event.layer == sekunderLayer) {
-        sekunderLayer.bringToFront();
-      }
-    })
-
-    function bringSekunderToFront() {
-      if (sekunderLayer) {
         sekunderLayer.bringToFront();
       }
     }
@@ -785,6 +764,7 @@
       imageModal.show();
     }
 
+    // Jalankan Sekunder Data Selection
     addSekunderData();
   </script>
 
