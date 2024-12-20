@@ -1625,6 +1625,250 @@
         "type": "Point",
         "coordinates": [111.034198, -7.014469011]
       }
+    },
+
+
+    
+    {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-118",
+          "X": 110.35018599236105,
+          "Y": -6.9746143946159913,
+          "Formasi": "Endapan Aluvium (Qa)",
+          "Elevasi": "0"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.350185992361048,
+              -6.974614394615991
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-119",
+          "X": 110.3530028758646,
+          "Y": -6.9998730359083545,
+          "Formasi": "Formasi Damar (QTd)",
+          "Elevasi": "80"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.353002875864604,
+              -6.999873035908355
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-120",
+          "X": 110.44997132175224,
+          "Y": -7.0932739817265924,
+          "Formasi": "Formasi Kerek (Tmk)",
+          "Elevasi": "84"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.449971321752244,
+              -7.093273981726592
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-121",
+          "X": 110.39576371005948,
+          "Y": -7.0959564385752696,
+          "Formasi": "Formasi Kaligetas (Qpkg)",
+          "Elevasi": "322"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.395763710059484,
+              -7.09595643857527
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-122",
+          "X": 110.35666825752179,
+          "Y": -7.0402748172833407,
+          "Formasi": "Formasi Kerek (Tmk)",
+          "Elevasi": "150"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.35666825752179,
+              -7.040274817283341
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-123",
+          "X": 110.39437611892906,
+          "Y": -7.1802307896499258,
+          "Formasi": "Formasi Gunung Api Gajahmakmur (Qhg)",
+          "Elevasi": "594"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.39437611892906,
+              -7.180230789649926
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-124",
+          "X": 110.39141491946029,
+          "Y": -7.1458000670159016,
+          "Formasi": "Formasi Batuan Gunungapi Kaligesik (Qpk)",
+          "Elevasi": "463"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.391414919460289,
+              -7.145800067015902
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-125",
+          "X": 110.34289128537635,
+          "Y": -7.1338931365380054,
+          "Formasi": "Formasi Batuan Gunungapi Kaligesik (Qpk)",
+          "Elevasi": "526"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.342891285376353,
+              -7.133893136538005
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-126",
+          "X": 110.32264193839654,
+          "Y": -7.0972394524809497,
+          "Formasi": "Formasi Gunung Api Gajahmakmur (Qhg)",
+          "Elevasi": "281"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.322641938396544,
+              -7.09723945248095
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-127",
+          "X": 110.41142431960105,
+          "Y": -7.0353537938744619,
+          "Formasi": "Formasi Kerek (Tmk)",
+          "Elevasi": "112"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.411424319601053,
+              -7.035353793874462
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-128",
+          "X": 110.59366495690151,
+          "Y": -7.2820603110361359,
+          "Formasi": "Formasi Gunung Api Merbabu (Qvm)",
+          "Elevasi": "259"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.593664956901506,
+              -7.282060311036136
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-129",
+          "X": 110.62697268541361,
+          "Y": -7.2082219440789732,
+          "Formasi": "Formasi Kerek (Tmk)",
+          "Elevasi": "118"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.626972685413605,
+              -7.208221944078973
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-130",
+          "X": 110.69923453536104,
+          "Y": -7.1815268550332156,
+          "Formasi": "Formasi Kerek (Tmk)",
+          "Elevasi": "82"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.699234535361043,
+              -7.181526855033216
+          ]
+      }
+  },
+  {
+      "type": "Feature",
+      "properties": {
+          "Kode Titik": "GL-131",
+          "X": 110.76698628951456,
+          "Y": -7.3677013591691836,
+          "Formasi": "Formasi Notopuro (Qpn)",
+          "Elevasi": "140"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [
+              110.766986289514563,
+              -7.367701359169184
+          ]
+      }
     }
   ]
 }
+
+
+
