@@ -134,7 +134,7 @@
       <select class="form-select" id="infrastructureSelect">
         <option value="">-- Pilih Data Primer --</option>
         <option value="MAT">MAT dan Kualitas Air Sumur Gali</option>
-        <option value="MAT Sumur Dalam">Sumur Dalam</option>
+        
         <option value="Geolistrik">Geolistrik 1 Dimensi</option>
 
       </select>
@@ -145,8 +145,10 @@
         <option value="">-- Pilih Data Sekunder --</option>
         <option value="Curah Hujan">BBWS Pemali Juana : Curah Hujan</option>
         <option value="AWLR">BBWS Pemali Juana : AWLR</option>
-        <option value="Data ESDM">Dinas ESDM Jateng : Sumur Dalam</option>
+        <option value="Data DESDM">Dinas ESDM Jateng : Sumur Dalam</option>
         <option value="Data Puslitbang PU">Puslitbang PU : Sumur Gali</option>
+        <option value="MAT Sumur Dalam">Sumur Dalam : Siatab</option>
+        
 
 
       </select>
@@ -297,7 +299,7 @@
     });
 
     var geojsonData;
-    var catLayer, wsLayer, batasPropinsiLayer, curahHujanLayer, awlrLayer, geolistrikLayer;
+    var catLayer, wsLayer, batasPropinsiLayer, curahHujanLayer, awlrLayer, geolistrikLayer,datapuslitbangLayer,dataDesdmLayer;
     var infrastructureLayer;
     var sekunderLayer;
 
@@ -451,11 +453,11 @@
       })
       .catch(error => console.error('Error loading Sumur ATAB GeoJSON:', error));
 
-    // Load Sumur Data Sekunder GeoJSON
+    // Load Sumur Data puslitbang GeoJSON
     fetch('uploads/data_puslitbang.geojson')
       .then(response => response.json())
       .then(data => {
-        dataSekunderLayer = L.geoJSON(data, {
+        datapuslitbangLayer = L.geoJSON(data, {
           pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng, {
               radius: 8,
@@ -503,7 +505,59 @@
           }
         });
       })
-      .catch(error => console.error('Error loading DATA SEKUNDER GeoJSON:', error));
+      .catch(error => console.error('Error loading DATA PUSLITBANG GeoJSON:', error));
+
+  //load data DESDM
+    fetch('uploads/data_DESDM.geojson')
+      .then(response => response.json())
+      .then(data => {
+        dataDesdmLayer = L.geoJSON(data, {
+          pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, {
+              radius: 8,
+              fillColor: "black",
+              color: "red",
+              weight: 1,
+              opacity: 1,
+              fillOpacity: 0.6
+            });
+          },
+          onEachFeature: function (feature, layer) {
+            var popupContent = `
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="informasi-dasar-tab" data-bs-toggle="tab" data-bs-target="#informasi-dasar" type="button" role="tab" aria-controls="informasi-dasar" aria-selected="true">Informasi</button>
+                                </li>
+                            </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="informasi-dasar" role="tabpanel" aria-labelledby="informasi-dasar-tab">
+                                        <strong>Titik Obs:</strong> ${feature.properties["Titik Obs"]} <br>
+                                        <strong>Hari/Tanggal:</strong> ${feature.properties["Hari/Tanggal"]} <br>
+                                        <strong>Manifestasi:</strong> ${feature.properties["Manifestasi"]} <br>
+                                        <strong>Kelurahan/Desa :</strong> ${feature.properties["Kelurahan/Desa"]} <br>
+                                        <strong>Kecamatan:</strong> ${feature.properties["Kecamatan"]}<br>
+                                        <strong>Kota/Kab:</strong> ${feature.properties["Kota/Kab"]}<br>
+                                        <strong>Provinsi:</strong> ${feature.properties["Provinsi"]}<br>
+                                        <strong>Z (mdpl):</strong> ${feature.properties["Z (mdpl)"]}mdpl<br>
+                                        <strong>Ked.Sumur (m):</strong> ${feature.properties["Ked.Sumur (m)"]}m<br>
+                                        <strong>Ked.MAT (m):</strong> ${feature.properties ["Ked.MAT (m)"]}m<br>
+                                        <strong>Tingg Kep Sumur (m):</strong> ${feature.properties["Tingg Kep Sumur (m)"]} m<br>
+                                        <strong>MAT:</strong> ${feature.properties["MAT"]}<br>
+                                        <strong>Kekeruhan:</strong> ${feature.properties.Kekeruhan}<br>
+                                        <strong>Bau:</strong> ${feature.properties.Bau}<br>
+                                        <strong>Rasa:</strong> ${feature.properties.Rasa}<br>
+                                        <strong>Suhu:</strong> ${feature.properties.Suhu} °C<br>
+                                        <strong>pH:</strong> ${feature.properties.pH}<br>
+                                        <strong>Debit Produksi:</strong> ${feature.properties["Debit Produksi"]} %<br>
+                                        
+                                    </div>
+                            </div>
+                        `;
+            layer.bindPopup(popupContent);
+          }
+        });
+      })
+      .catch(error => console.error('Error loading DATA DESDM GeoJSON:', error));
 
 
 
@@ -625,13 +679,7 @@
           infrastructureLayer = curahHujanLayer;
           infrastructureLayer.addTo(map);
           infrastructureLayer.bringToFront();
-        } else if (this.value === 'AWLR' && awlrLayer) {
-          infrastructureLayer = awlrLayer;
-          infrastructureLayer.addTo(map);
-          infrastructureLayer.bringToFront();
-        } else if (this.value === 'MAT Sumur Dalam' && sumurAtabLayer) {
-          infrastructureLayer = sumurAtabLayer;
-          infrastructureLayer.addTo(map);
+        
         } else if (this.value === 'Geolistrik' && geolistrikLayer) {
           infrastructureLayer = geolistrikLayer;
           infrastructureLayer.addTo(map);
@@ -694,14 +742,33 @@
           map.removeLayer(sekunderLayer);
         }
 
-        if (this.value === 'AWLR' && dataSekunderLayer) {
-          console.log('testing');
-          sekunderLayer = dataSekunderLayer;
+        if (this.value === 'Data Puslitbang PU' && datapuslitbangLayer) {
+          
+          sekunderLayer = datapuslitbangLayer;
           sekunderLayer.addTo(map);
           sekunderLayer.bringToFront();
-        } else if (this.value === 'Data ESDM') {
-          // masukan data ESD 
         }
+        if (this.value === 'Curah Hujan' && curahHujanLayer) {
+          sekunderLayer = curahHujanLayer;
+          sekunderLayer.addTo(map);
+          sekunderLayer.bringToFront();
+        }
+        if (this.value === 'MAT Sumur Dalam' && sumurAtabLayer) {
+          sekunderLayer = sumurAtabLayer;
+          sekunderLayer.addTo(map);
+          sekunderLayer.bringToFront();
+        }
+
+        if (this.value === 'Data DESDM' && dataDesdmLayer) {
+          sekunderLayer = dataDesdmLayer;
+          sekunderLayer.addTo(map);
+          sekunderLayer.bringToFront();
+        
+
+        
+        } else if (this.value === 'Data DESDM') {
+          // masukan data ESD 
+        } 
       });
     }
 
